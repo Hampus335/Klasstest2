@@ -10,10 +10,8 @@ namespace Klasstest2
         public string? FirstName { get; set; }
         public string? SurName { get; set; }
 
-        public static void DataToVar(User u)
-        {
-            
-
+        public void DataToVar()
+        {       
             Console.WriteLine("Vad heter du i förnamn?");
             this.FirstName = Console.ReadLine();
 

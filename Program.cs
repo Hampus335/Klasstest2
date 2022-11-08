@@ -8,12 +8,11 @@ class program
     private static void Main()
     {
         User u = new User();
-        User.DataToVar(u);
+        u.DataToVar();
         Console.WriteLine($"Hej {u.GetFullName()}, du är {u.Age} år och vi kan kontakta dig på {u.Email?.ToLower()}");
-        
 
         UserRepository l = new UserRepository();
 
-        l.Add(u);
+        l.GetUserFromList(u);
     }
 }
