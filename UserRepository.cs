@@ -2,6 +2,11 @@
 {
     internal class UserRepository
     {
-        List<> = new List<User>();
+        private readonly List<User> _users = new List<User>();
+       
+        public void Add(User u)
+        {
+            _users.Add(u);
+        }
     }
-}
+} 
