@@ -11,14 +11,13 @@
         public void Add(User u)
         {
             _users.Add(u);
-            Console.WriteLine(_users.ToString());
         }
         
-        public void GetUserFromList(User u)
+        public void GetUserFromList()
         {
             foreach (User line in _users)
             {
-                Console.WriteLine(string.Format(]=;
+                Console.WriteLine($"Namn: {line.GetFullName()}, Ålder: {line.Age}, Email: {line.Email}");
             }
         }
     }

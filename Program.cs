@@ -11,8 +11,9 @@ class program
         u.DataToVar();
         Console.WriteLine($"Hej {u.GetFullName()}, du är {u.Age} år och vi kan kontakta dig på {u.Email?.ToLower()}");
 
-        UserRepository l = new UserRepository();
-
-        l.GetUserFromList(u);
+        UserRepository i = new UserRepository();
+       
+        i.Add(u);
+        i.GetUserFromList();
     }
 }
